@@ -1,6 +1,6 @@
 import React from "react";
 import { Search } from "lucide-react";
-import useTaskManager from "../hooks/useTaskManager";
+import { useTaskManager}  from "../hooks/useTaskManager";
 export default function SearchAndFilter() {
   const { searchQuery, setSearchQuery, filter, setFilter } = useTaskManager();
   return (

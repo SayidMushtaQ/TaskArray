@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { tasksData } from "../data/dummyTasks";
-export default function useTaskManager() {
+export  function useTaskManager() {
   const [tasks] = useState(tasksData);
   const [newTask, setNewTask] = useState("");
   const [newPriority, setNewPriority] = useState("Medium");

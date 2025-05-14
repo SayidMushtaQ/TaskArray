@@ -1,4 +1,4 @@
-import useTaskManager from "./hooks/useTaskManager";
+import {useTaskManager} from "./hooks/useTaskManager";
 import AddTask from "./components/AddTask";
 import SearchAndFilter from "./components/SearchAndFilter";
 import TasksList from "./components/TasksList";
@@ -12,13 +12,10 @@ export default function TaskScheduler() {
         <h1 className="text-3xl font-bold text-gray-800 mb-6">
           Task Scheduler
         </h1>
-
         {/* Add Task Form */}
         <AddTask />
-
         {/* Search and Filter */}
         <SearchAndFilter />
-
         {/* Tasks List */}
         <TasksList />
 

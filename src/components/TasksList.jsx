@@ -1,7 +1,7 @@
 import React from "react";
 import { priorityColor } from "../utils/priorityColor";
 import { Trash2, ArrowUp, ArrowDown, CheckCircle, Circle } from "lucide-react";
-import useTaskManager from "../hooks/useTaskManager";
+import { useTaskManager } from "../hooks/useTaskManager";
 export default function TasksList() {
   const {
     filteredTasks,
