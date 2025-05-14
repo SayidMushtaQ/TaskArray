@@ -8,6 +8,9 @@ export  function useTaskManager() {
   const [searchQuery, setSearchQuery] = useState("");
   const addTask = () => {
     console.log("Add task function would be implemented here");
+    console.log(tasks.length)
+    console.log(tasks)
+    console.log(newTask)
   };
 
   const removeTask = (id) => {
@@ -26,14 +29,6 @@ export  function useTaskManager() {
     console.log(`Decrease priority for task ${id} would be implemented here`);
   };
   const filteredTasks = tasks
-    .filter((task) => {
-      if (filter === "completed") return task.completed;
-      if (filter === "active") return !task.completed;
-      return true;
-    })
-    .filter((task) =>
-      task.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
 
   return {
     tasks,
